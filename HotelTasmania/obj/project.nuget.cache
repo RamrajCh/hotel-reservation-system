@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FNLv+3I5L8fZSAkiG2sEt13nQ4eJr8WyJ0bFOfUVtWHViQWw7HlAEkQp91HXng+zs3Cm94FxMBhlD3jXXyVK7A==",
+  "success": true,
+  "projectFilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/HotelTasmania.csproj",
+  "expectedPackageFiles": [
+    "/home/ramraj/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.2/microsoft.aspnetcore.app.ref.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

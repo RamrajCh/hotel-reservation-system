@@ -1,0 +1,63 @@
+ /* Home page table */
+
+ .wrap-table {
+	padding: 5rem;
+	display: table;
+	width: 100%;
+	height: 100vh;
+	vertical-align: middle;
+}
+
+.hp-table {
+display: table;
+width: 50%;
+}
+.hp-tr {
+display: table-row;
+}
+.hp-thead {
+display: table-header-group;
+}
+.hp-tbody {
+display: table-row-group;
+}
+
+.hp-td,
+.hp-th {
+display: table-cell;
+width: 50%;
+}
+.hp-caption {
+display: table-caption;
+}
+
+.hp-table,
+.hp-thead,
+.hp-tbody,
+.hp-tfoot,
+.hp-tr,
+.hp-td,
+.hp-th {
+text-align: center;
+margin: auto;
+padding: 1rem;
+}
+.hp-table {
+background: #fff;
+border-radius: 5px;
+margin: auto;
+border: none;
+padding: 0;
+margin-bottom: 5rem;
+}
+
+.hp-th {
+font-weight: 700;
+color:#e3aa3e;
+border: 1px solid #dedede;
+}
+.hp-td {
+font-weight: 300;
+border: 1px solid #dedede;
+border-top: none;
+}  

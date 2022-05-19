@@ -21,57 +21,91 @@
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 
+    <!-- Custom css files -->
     <link href="~/css/style.css" rel="stylesheet" />
     <link href="~/css/homepage.css" rel="stylesheet" />
+    <link href="~/css/forms.css" rel="stylesheet" />
 
-    <!-- page based css -->
 </head>
 
 <body>
+    <header class="header_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-11 offset-lg-1">
+                    <nav class="navbar navbar-expand-lg custom_nav-container align-items-center">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="~/img/logo.png" alt="">
+                            <span>
+                                Hotel Tasmania
+                            </span>
+                        </a>
 
-    <div>
-        <!-- header section strats -->
-        <header class="header_section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-11 offset-lg-1">
-                        <nav class="navbar navbar-expand-lg custom_nav-container align-items-center">
-                            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                                <img src="~/img/logo.png" alt="">
-                                <span>
-                                    Hotel Tasmania
-                                </span>
-                            </a>
-
-                            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center" style="float: right;">
-                                <ul class="navbar-nav">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center" style="float: right;">
+                            <ul class="navbar-nav">
+                                @if (ViewData["Active"] == "Home"){
                                     <li class="nav-item active">
                                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                     </li>
+                                }
+                                else{
                                     <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                    </li>
+                                }
+                                @if (ViewData["Active"] == "Customer"){
+                                    <li class="nav-item active">
                                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Customer</a>
                                     </li>
+                                }
+                                else{
                                     <li class="nav-item">
-                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Room</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Customer</a>
                                     </li>
+                                }
+
+                                @if (ViewData["Active"] == "RoomType"){
+                                    <li class="nav-item active">
+                                        <a class="nav-link" asp-area="" asp-controller="RoomType" asp-action="Index">Room Type</a>
+                                    </li>
+                                }
+                                else{
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="RoomType" asp-action="Index">Room Type</a>
+                                    </li>
+                                }
+                                @if (ViewData["Active"] == "Room"){
+                                    <li class="nav-item active">
+                                        <a class="nav-link" asp-area="" asp-controller="Room" asp-action="Index">Room</a>
+                                    </li>
+                                }
+                                else{
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Room" asp-action="Index">Room</a>
+                                    </li>
+                                }
+                                @if (ViewData["Active"] == "Reservation"){
+                                    <li class="nav-item active">
+                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Reservation</a>
+                                    </li>
+                                }
+                                else{
                                     <li class="nav-item">
                                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Reservation</a>
                                     </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                                }
+                                
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </header>
-        <!-- end header section -->
-        <!-- slider section -->
-        <div class="container">
-            <main role="main">
-                @RenderBody()
-            </main>
         </div>
-        <!-- end slider section -->
+    </header>
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

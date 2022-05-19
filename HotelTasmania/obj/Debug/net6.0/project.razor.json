@@ -16298,8 +16298,28 @@
   "RootNamespace": "HotelTasmania",
   "Documents": [
     {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Create.cshtml",
+      "TargetPath": "Views\\RoomType\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Details.cshtml",
+      "TargetPath": "Views\\Room\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Index.cshtml",
+      "TargetPath": "Views\\Room\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Details.cshtml",
+      "TargetPath": "Views\\RoomType\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16313,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Delete.cshtml",
+      "TargetPath": "Views\\RoomType\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -16323,13 +16348,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Delete.cshtml",
+      "TargetPath": "Views\\Room\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Create.cshtml",
+      "TargetPath": "Views\\Room\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Edit.cshtml",
+      "TargetPath": "Views\\Room\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Edit.cshtml",
+      "TargetPath": "Views\\RoomType\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Index.cshtml",
+      "TargetPath": "Views\\RoomType\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

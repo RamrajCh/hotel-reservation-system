@@ -1,4 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<HotelTasmaniaContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("HotelTasmaniaContext") ?? throw new InvalidOperationException("Connection string 'HotelTasmaniaContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

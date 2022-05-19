@@ -1,0 +1,65 @@
+@model HotelTasmania.Models.Room
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <div class="row align-items-stretch no-gutters form-wrap">
+        <div class="col-md">
+            <div class="form h-100">
+                <h3> Edit Room </h3>
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="RoomId" />
+                    <div class="row">
+                        <div class="form-group">
+                        <label asp-for="RoomNumber" class="control-label"></label>
+                        <input asp-for="RoomNumber" class="form-control" />
+                        <span asp-validation-for="RoomNumber" class="text-danger"></span>
+                    </div>  
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group mb-3">
+                            <label asp-for="RoomTypeId" class="control-label"></label>
+                            <select asp-for="RoomTypeId" class ="form-control" asp-items="ViewBag.RoomTypeId"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group mb-3">
+                            <label asp-for="PricePerNight" class="control-label"></label>
+                            <input asp-for="PricePerNight" class="form-control" />
+                            <span asp-validation-for="PricePerNight" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group mb-3">
+                            <label asp-for="Floor" class="control-label"></label>
+                            <input asp-for="Floor" class="form-control" />
+                            <span asp-validation-for="Floor" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group mb-3">
+                            <label asp-for="NumberOfBeds" class="control-label"></label>
+                            <input asp-for="NumberOfBeds" class="form-control" />
+                            <span asp-validation-for="NumberOfBeds" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="submit" value="Save" class="btn btn-primary rounded-0 py-2 px-4" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

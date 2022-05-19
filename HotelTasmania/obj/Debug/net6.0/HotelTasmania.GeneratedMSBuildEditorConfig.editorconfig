@@ -19,8 +19,44 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Room/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbVR5cGUvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbVR5cGUvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbVR5cGUvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbVR5cGUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/RoomType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbVR5cGUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/Views/Shared/Error.cshtml]

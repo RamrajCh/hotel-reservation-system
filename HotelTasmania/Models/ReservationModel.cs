@@ -29,7 +29,6 @@ namespace HotelTasmania.Models {
         [Display(Name = "Check Out Date")]
         public System.DateTime CheckOutDate { get; set; }
 
-        [Required]
         [DataType(DataType.Currency)]
         [Display(Name = "Total Price")]
         public decimal TotalPrice { get; set; }

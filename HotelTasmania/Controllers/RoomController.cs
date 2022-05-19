@@ -138,6 +138,7 @@ namespace HotelTasmania.Controllers
                         throw;
                     }
                 }
+                ViewData["Active"] = "Room";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["RoomTypeId"] = new SelectList(_context.RoomType, "RoomTypeId", "RoomTypeName", room.RoomTypeId);

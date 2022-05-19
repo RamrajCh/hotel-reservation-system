@@ -43,7 +43,7 @@
 
                         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center" style="float: right;">
                             <ul class="navbar-nav">
-                                @if (ViewData["Active"] == "Home"){
+                                @if ((string)ViewData["Active"] == "Home"){
                                     <li class="nav-item active">
                                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                     </li>
@@ -53,18 +53,18 @@
                                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                     </li>
                                 }
-                                @if (ViewData["Active"] == "Customer"){
+                                @if ((string)ViewData["Active"] == "Customer"){
                                     <li class="nav-item active">
-                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Customer</a>
+                                        <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index">Customer</a>
                                     </li>
                                 }
                                 else{
                                     <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Customer</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Customer" asp-action="Index">Customer</a>
                                     </li>
                                 }
 
-                                @if (ViewData["Active"] == "RoomType"){
+                                @if ((string)ViewData["Active"] == "RoomType"){
                                     <li class="nav-item active">
                                         <a class="nav-link" asp-area="" asp-controller="RoomType" asp-action="Index">Room Type</a>
                                     </li>
@@ -74,7 +74,7 @@
                                         <a class="nav-link" asp-area="" asp-controller="RoomType" asp-action="Index">Room Type</a>
                                     </li>
                                 }
-                                @if (ViewData["Active"] == "Room"){
+                                @if ((string)ViewData["Active"] == "Room"){
                                     <li class="nav-item active">
                                         <a class="nav-link" asp-area="" asp-controller="Room" asp-action="Index">Room</a>
                                     </li>
@@ -84,14 +84,14 @@
                                         <a class="nav-link" asp-area="" asp-controller="Room" asp-action="Index">Room</a>
                                     </li>
                                 }
-                                @if (ViewData["Active"] == "Reservation"){
+                                @if ((string)ViewData["Active"] == "Reservation"){
                                     <li class="nav-item active">
-                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Reservation</a>
+                                        <a class="nav-link" asp-area="" asp-controller="Reservation" asp-action="Index">Reservation</a>
                                     </li>
                                 }
                                 else{
                                     <li class="nav-item">
-                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Reservation</a>
+                                        <a class="nav-link" asp-area="" asp-controller="Reservation" asp-action="Index">Reservation</a>
                                     </li>
                                 }
                                 

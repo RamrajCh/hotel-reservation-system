@@ -17,4 +17,6 @@ using HotelTasmania.Models;
         public DbSet<HotelTasmania.Models.Room> Room { get; set; }
 
         public DbSet<HotelTasmania.Models.Customer> Customer { get; set; }
+
+        public DbSet<HotelTasmania.Models.Reservation> Reservation { get; set; }
     }

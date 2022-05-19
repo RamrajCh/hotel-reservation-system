@@ -50,6 +50,36 @@ namespace HotelTasmania.Migrations
                     b.ToTable("Customer");
                 });
 
+            modelBuilder.Entity("HotelTasmania.Models.Reservation", b =>
+                {
+                    b.Property<int>("ReservationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CheckInDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CheckOutDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("RoomId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ReservationId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("Reservation");
+                });
+
             modelBuilder.Entity("HotelTasmania.Models.Room", b =>
                 {
                     b.Property<int>("RoomId")
@@ -94,6 +124,25 @@ namespace HotelTasmania.Migrations
                     b.ToTable("RoomType");
                 });
 
+            modelBuilder.Entity("HotelTasmania.Models.Reservation", b =>
+                {
+                    b.HasOne("HotelTasmania.Models.Customer", "Customer")
+                        .WithMany("Reservation")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HotelTasmania.Models.Room", "Room")
+                        .WithMany("Reservation")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Room");
+                });
+
             modelBuilder.Entity("HotelTasmania.Models.Room", b =>
                 {
                     b.HasOne("HotelTasmania.Models.RoomType", "RoomType")
@@ -103,6 +152,16 @@ namespace HotelTasmania.Migrations
                         .IsRequired();
 
                     b.Navigation("RoomType");
+                });
+
+            modelBuilder.Entity("HotelTasmania.Models.Customer", b =>
+                {
+                    b.Navigation("Reservation");
+                });
+
+            modelBuilder.Entity("HotelTasmania.Models.Room", b =>
+                {
+                    b.Navigation("Reservation");
                 });
 
             modelBuilder.Entity("HotelTasmania.Models.RoomType", b =>

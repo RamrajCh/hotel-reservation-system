@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QqAMCiWREZiaujW/jyOfeLLTAKbO3xFYLRCme1PIdLk=",
+  "Hash": "ELfvDRTQJnYvdNtZ2QWdldgtGt5ymY5dRBaMMKD2pZQ=",
   "Source": "HotelTasmania",
   "BasePath": "_content/HotelTasmania",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/wwwroot/css/cards.css",
+      "SourceId": "HotelTasmania",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/wwwroot/",
+      "BasePath": "_content/HotelTasmania",
+      "RelativePath": "css/cards.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/cards.css"
+    },
     {
       "Identity": "/home/ramraj/Documents/dhami/hotel-reservation-system/HotelTasmania/wwwroot/css/forms.css",
       "SourceId": "HotelTasmania",

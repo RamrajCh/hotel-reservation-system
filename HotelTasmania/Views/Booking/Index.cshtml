@@ -1,0 +1,101 @@
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@using HotelTasmania.Models
+@model dynamic
+
+@{
+    ViewData["Title"] = "Bookings";
+}
+
+<div class="container">
+    <br>
+    <h3> Standard Rooms </h>
+    <hr>
+    <div class="cards">
+        @foreach (var item in Model.standard_rooms)
+        {
+            <div class="r-card">
+                <h2 class="card__title">
+                    @item.RoomNumber
+                </h2>
+                <br>
+                <h3 class="card__subtitle">
+                    @item.RoomType.RoomTypeName
+                </h3>
+                <ul class="card__list">
+                    <li class="card__item">Price per Night: $ @item.PricePerNight</li>
+                    <li class="card__item">Number of Beds: @item.NumberOfBeds</li>
+                    <li class="card__item">Floor: @item.Floor</li>
+                </ul>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <a class="card__link" href="#" style="font-size: 16px;"> Book Now</a>                    
+                    </div>
+                    <div class="col">
+                        <a class="card__link" asp-controller="Booking" asp-action="RoomDetail" asp-route-id="@item.RoomId" style="font-size: 16px;"> View Detail</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <h3> Deluxe Rooms </h>
+    <hr>
+    <div class="cards">
+        @foreach (var item in Model.deluxe_rooms)
+        {
+            <div class="r-card">
+                <h2 class="card__title">
+                    @item.RoomNumber
+                </h2>
+                <br>
+                <h3 class="card__subtitle">
+                    @item.RoomType.RoomTypeName
+                </h3>
+                <ul class="card__list">
+                    <li class="card__item">Price per Night: $ @item.PricePerNight</li>
+                    <li class="card__item">Number of Beds: @item.NumberOfBeds</li>
+                    <li class="card__item">Floor: @item.Floor</li>
+                </ul>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <a class="card__link" href="#" style="font-size: 16px;"> Book Now</a>
+                    </div>
+                    <div class="col">
+                        <a class="card__link" asp-controller="Booking" asp-action="RoomDetail" asp-route-id="@item.RoomId" style="font-size: 16px;"> View Detail</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <h3> Suite Rooms </h>
+    <hr>
+    <div class="cards">
+        @foreach (var item in Model.suite_rooms)
+        {
+            <div class="r-card">
+                <h2 class="card__title">
+                    @item.RoomNumber
+                </h2>
+                <br>
+                <h3 class="card__subtitle">
+                    @item.RoomType.RoomTypeName
+                </h3>
+                <ul class="card__list">
+                    <li class="card__item">Price per Night: $ @item.PricePerNight</li>
+                    <li class="card__item">Number of Beds: @item.NumberOfBeds</li>
+                    <li class="card__item">Floor: @item.Floor</li>
+                </ul>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <a class="card__link" href="#" style="font-size: 16px;"> Book Now</a>
+                    </div>
+                    <div class="col">
+                        <a class="card__link" asp-controller="Booking" asp-action="RoomDetail" asp-route-id="@item.RoomId" style="font-size: 16px;"> View Detail</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

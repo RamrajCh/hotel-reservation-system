@@ -32,6 +32,8 @@ namespace HotelTasmania.Models {
             [DateOfBirthValidation()]
             [Display(Name = "Date of Birth")]
             public System.DateTime DateOfBirth { get; set; }
+
+            public virtual ICollection<Reservation> Reservation { get; set; }
      }
 
     //  Validation for DOB to be in the past

@@ -186,3 +186,11 @@ body {
     background-image: url(../img/menu.png);
     background-size: 45px;
   }
+
+th{
+  color: #e8aa3e;
+}
+
+td{
+  color: #266041;
+}

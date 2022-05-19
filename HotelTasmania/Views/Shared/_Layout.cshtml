@@ -25,6 +25,7 @@
     <link href="~/css/style.css" rel="stylesheet" />
     <link href="~/css/homepage.css" rel="stylesheet" />
     <link href="~/css/forms.css" rel="stylesheet" />
+    <link href="~/css/cards.css" rel="stylesheet" />
 
 </head>
 
@@ -51,6 +52,16 @@
                                 else{
                                     <li class="nav-item">
                                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                    </li>
+                                }
+                                @if ((string)ViewData["Active"] == "Booking"){
+                                    <li class="nav-item active">
+                                        <a class="nav-link" asp-area="" asp-controller="Booking" asp-action="Index">Booking</a>
+                                    </li>
+                                }
+                                else{
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Booking" asp-action="Index">Booking</a>
                                     </li>
                                 }
                                 @if ((string)ViewData["Active"] == "Customer"){

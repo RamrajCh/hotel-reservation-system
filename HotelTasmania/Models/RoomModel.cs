@@ -44,6 +44,8 @@ namespace HotelTasmania.Models {
         [Display(Name = "Number of beds")]
         [NumberOfBedsValidation()]
         public int NumberOfBeds { get; set; }
+
+        public virtual ICollection<Reservation> Reservation { get; set; }
     }
 
     // Custom validators for room number to be unique and not 0

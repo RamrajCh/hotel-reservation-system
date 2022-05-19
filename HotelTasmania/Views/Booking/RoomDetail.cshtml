@@ -1,0 +1,100 @@
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@using HotelTasmania.Models
+@model dynamic
+
+@{
+        ViewData["Title"] = "Room Detail - Bookings";
+}
+
+<div class="container">
+    <br>
+    <h3>Reservation Details for Room @Model.room.RoomNumber </h3>
+    <hr>
+
+    <div>
+    <h5>Room Detail</h5>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Room Number
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.room.RoomNumber
+        </dd>
+        <dt class = "col-sm-2">
+            Room Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.room.RoomType.RoomTypeName
+        </dd>
+        <dt class = "col-sm-2">
+            Price per night
+        </dt>
+        <dd class = "col-sm-10">
+            $ @Model.room.PricePerNight
+        </dd>
+        <dt class = "col-sm-2">
+            Floor
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.room.Floor
+        </dd>
+        <dt class = "col-sm-2">
+            Number of Beds
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.room.NumberOfBeds
+        </dd>
+    </dl>
+</div>
+
+<div class="row">
+    <h5> Reservation List </h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Room Number
+                </th>
+                <th>
+                    Customer Name
+                </th>
+                <th>
+                    Check In Date
+                </th>
+                <th>
+                    Check Out Date
+                </th>
+                <th>
+                    Total Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.reservations) {
+                <tr>
+                    <td>
+                        @item.Room.RoomNumber
+                    </td>
+                    <td>
+                        @item.Customer.CustomerName
+                    </td>
+                    <td>
+                        @item.CheckInDate.ToString("d MMM yyyy")
+                    </td>
+                    <td>
+                        @item.CheckOutDate.ToString("d MMM yyyy")
+                    </td>
+                    <td>
+                        $ @item.TotalPrice
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <a class="btn btn-primary rounded-0 py-2 px-4"> Create New Reservation </a>
+    </div>
+</div>

@@ -201,7 +201,9 @@ namespace HotelTasmania.Controllers
 
             ViewData["Active"] = "Booking";
             ViewData["RoomId"] = RoomId;
+            ViewData["RoomNumber"] = room.RoomNumber;
             ViewData["CustomerId"] = CustomerId;
+            ViewData["CustomerName"] = customer.CustomerName;
             return View();
         }
 
